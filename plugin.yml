@@ -8,3 +8,12 @@ permissions:
   skinguard.bypass:
     description: "Bypass skin size and geometry limits"
     default: op
+  skinguard.admin:
+    description: "Access to /skinguard command"
+    default: op
+
+commands:
+  skinguard:
+    description: "Check skin status or reload plugin"
+    permission: skinguard.admin
+    aliases: ["sg"]
