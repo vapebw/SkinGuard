@@ -24,7 +24,6 @@ final class SkinShield extends PluginBase {
 
         $this->getServer()->getPluginManager()->registerEvents(new SkinListener($this), $this);
 
-        $this->getLogger()->info(TextFormat::LIGHT_PURPLE . "skinshield enabled - by @sxvape");
     }
 
     public static function getInstance(): self {
